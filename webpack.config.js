@@ -4,12 +4,16 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports ={
+
+
     entry: './src/index.js',
+
     output: {
 
         filename : '[name].[contentHash].js',
         path: path.resolve(__dirname, 'dist'),
     },
+    
 
         devServer: {
             contentBase: path.join(__dirname, 'dist'),
@@ -19,7 +23,25 @@ module.exports ={
             rules: [
             {
             test: /\.css$/,
-            use: [MinicssExtractPlugin.loader, 'css-loader'],
+            use: [MiniCssExtractPlugin.loader, 'css-loader'],
+            },
+            {
+             test:/\.scss$/,
+             use: ['style-loader',
+             { loader: 'css-loader', options: { importLoaders: 1 } },
+             {
+                 loader: 'postcss-loader',
+                 options:{
+                     plugins: (loader) => [
+                     require('autoprefixer')({
+                         browsers: ["last 2 versions", 'ie > 8']
+                     }
+                     ),
+                    ]
+                
+                 }
+             },
+            'sass-loader']
             }
         ],
     },
@@ -37,7 +59,5 @@ module.exports ={
 
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
-    },
-
     },
 }

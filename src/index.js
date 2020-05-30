@@ -1,5 +1,7 @@
 import moment from 'moment'
-import 'style.css'
+import './style.css'
+
+console.log(css)
 
 moment.locale('fr')
 
