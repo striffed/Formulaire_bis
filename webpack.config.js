@@ -66,6 +66,12 @@ module.exports ={
         inject: true,
         filename: 'index.html'
         }),
+        
+        new HtmlWebpackPlugin({
+            template: './src/inscription.html',
+            inject: true,
+            filename: 'inscription.html'
+            }),
         new MiniCssExtractPlugin(),
         new CleanWebpackPlugin(),
        ],
