@@ -48,7 +48,8 @@ body {
 .login-form {
     display: flex;
     flex-direction: column;
-  	min-width: 600px;
+      min-width: 200px;
+      width: 600px;
     max-width: 600px;
     min-height: 500px;
 	padding: 15px;
@@ -130,11 +131,13 @@ input {
 
 
 .inscription-form{
-  	min-width: 800px;
-    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+      min-width: 200px;
+      width: 800px;
     min-height: 500px;
 	padding: 15px;
-    background-color: rgb(255, 0, 0);
+    margin: auto;
     
 }
 
@@ -150,6 +153,7 @@ input {
 .inscription-form div{
     width: 50%;
     text-align: center;
+    position: relative;
 }
 
 .inscription-form .champ{
@@ -162,7 +166,6 @@ input {
 
 .inscription-form input[type = "text"], .inscription-form input[type = "password"], .inscription-form input[type = "email"] {
     width: 90%;
-   
     border: 1px solid black;
     margin: auto;
     margin-top: 5%;
@@ -171,3 +174,45 @@ input {
     padding: 20px;
     padding-left: 15%;
 } 
+
+.inscription-form input[type = "submit"] {
+	background-color: white;
+    width: 35%;
+    margin: auto;
+    color: black;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin-top: 35px;
+    cursor: pointer;
+    padding: 5px;
+    font-family: Righteous;
+    font-size: 1.3rem;
+    font-weight: bold;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+.inscription-form input[type = "submit"]:hover {
+    opacity: 0.8;
+    background-color: rgba(165, 165, 165, 0.295);
+}
+
+.inscription-form #a2{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.500);
+}
+
+.inscription-form #a2:hover{
+    color: black;
+}
+.inscription-form div .icon{
+    position: absolute;
+    left: 0;
+    margin-top: 10%;
+    margin-left: 8%;
+    width: 7%;
+    opacity: 0.5;
+}
