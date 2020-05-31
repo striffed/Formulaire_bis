@@ -9,10 +9,11 @@
 
 <body>
 	<div class="box">
-		<form class="login-form">
+		<form class="login-form" id="connexion_form">
             <h1>LOG IN</h1>
+
             <div>
-            <img class="icon" name="user" src="img/user64.png"><input type="text" name="username" placeholder="Username" required>
+            <img class="icon" name="user" src="img/user64.png"><input type="email" id="text" name="mail" placeholder="Username" required>
         </div>
 
         <div>
@@ -22,7 +23,9 @@
         </div>
 
             <a id="a1" href="#">Forgot Password ?</a>
-			<input type="submit" name="Login" value="Log in">
+            <input type="submit" id="login" name="Login" value="Log in">
+            <p id="messageerror">Erreur dans l'email ou le mdp</p>
+            <p id="messageok">Authentification réussi</p>
 				
 				<a id="a2" href="inscription.html">Don't have an account ? Sign Up</a>
 		</form>

@@ -20,6 +20,7 @@ module.exports ={
         },
 
         module: {
+            
             rules: [
                 {
                     test: /\.html$/,
@@ -35,32 +36,26 @@ module.exports ={
             test: /\.css$/,
             use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
+            
             {
-             test:/\.scss$/,
-             use: ['style-loader',
-             { loader: 'css-loader', options: { importLoaders: 1 } },
-             {
-                 loader: 'postcss-loader',
-                 options:{
-                     plugins: (loader) => [
-                     require('autoprefixer')({
-                         browsers: ["last 2 versions", 'ie > 8']
-                     }
-                     ),
-                    ]
-                
-                 }
-             },
-            'sass-loader']
-            }
-        ],
-    },
+            test: /\.s(a|c)ss$/,
+            loader: [
+                MiniCssExtractPlugin.loader,
+                'css-loader',
+                {
+                    loader: 'sass-loader',
+                }
+            ]
+        },
+    ],
+},
 
 
     resolve:{extensions: ['.js','.scss']},
 
     plugins: [
-               
+        
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
         template: './src/connexion.html',
         inject: true,
@@ -74,7 +69,7 @@ module.exports ={
             }),
             
         new MiniCssExtractPlugin(),
-        new CleanWebpackPlugin(),
+
        ],
 
     devServer: {
