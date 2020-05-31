@@ -11,6 +11,7 @@ document.getElementById('passwordtoggle').addEventListener('click', ()=>{
     }
 })
 
+
 const oneSecondInMillisecond = 1000
 const email = "maigret@lp.wd"
 const password = 'password'
@@ -58,4 +59,6 @@ const stopPendingState = () => {
     button.removeAttribute('disabled')
 }
 
-document.querySelector('#connexion_form').addEventListener('submit', onLoginFormSubmit);
+if(document.querySelector('#connexion_form')){
+  document.querySelector('#connexion_form').addEventListener('submit', onLoginFormSubmit);
+}
