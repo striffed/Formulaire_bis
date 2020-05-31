@@ -62,9 +62,9 @@ module.exports ={
     plugins: [
                
         new HtmlWebpackPlugin({
-        template: './src/index.html',
+        template: './src/connexion.html',
         inject: true,
-        filename: 'index.html'
+        filename: 'connexion.html'
         }),
         
         new HtmlWebpackPlugin({
@@ -72,6 +72,7 @@ module.exports ={
             inject: true,
             filename: 'inscription.html'
             }),
+            
         new MiniCssExtractPlugin(),
         new CleanWebpackPlugin(),
        ],

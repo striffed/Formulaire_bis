@@ -34,6 +34,7 @@ body {
     width: 40px;
     height: 40px;
     opacity: 0.7;
+    cursor: pointer;
 }
 
 
@@ -87,9 +88,11 @@ body {
     width: 90%;
 	margin-top: 10%;
 }
+
 .login-form input[type = "password"] {
 	margin-top: 10%;
 }
+
 input {
   outline: none;
  }
@@ -110,13 +113,16 @@ input {
     -webkit-transition: 0.25s;
     transition: 0.25s;
 }
+
 .login-form input[type = "submit"]:hover {
     opacity: 0.8;
     background-color: rgba(165, 165, 165, 0.295);
 }
+
 .login-form input[type = "text"]:focus, .login-form input[type = "password"]:focus {
  	border: 1px rgb(0, 174, 255) solid;
  }
+
 .login-form input[type = "text"], .login-form input[type = "password"] {
     width: 80%;
    
@@ -164,7 +170,7 @@ input {
     flex-wrap: wrap;
 }
 
-.inscription-form input[type = "text"], .inscription-form input[type = "password"], .inscription-form input[type = "email"] {
+.inscription-form input[type = "text"], .inscription-form input[type = "password"], .inscription-form input[type = "email"], .inscription-form input[type = "date"] {
     width: 90%;
     border: 1px solid black;
     margin: auto;
@@ -191,6 +197,7 @@ input {
     -webkit-transition: 0.25s;
     transition: 0.25s;
 }
+
 .inscription-form input[type = "submit"]:hover {
     opacity: 0.8;
     background-color: rgba(165, 165, 165, 0.295);
