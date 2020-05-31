@@ -1,15 +1,21 @@
 import './global';
 
-document.getElementById('passwordtoggle').addEventListener('click', ()=>{
 
-    var x = document.getElementById("password");
+if(document.querySelector('#connexion_form')){
+    document.getElementById('passwordtoggle').addEventListener('click', ()=>{
 
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
-})
+        var x = document.getElementById("password");
+    
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+    })
+    
+    
+  }
+  
 
 
 const oneSecondInMillisecond = 1000

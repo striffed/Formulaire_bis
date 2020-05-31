@@ -71,12 +71,13 @@ body {
     margin: auto;
     margin-top: 1%;
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.500);
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
 }
 
 .login-form #a2:hover,
 .login-form #a1:hover{
-    color: black;
+    text-decoration: underline;
 }
 
 .login-form #a2{
@@ -249,11 +250,13 @@ input {
     margin: auto;
     margin-top: 5%;
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.500);
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
 }
 
 .inscription-form #a2:hover{
-    color: black;
+    
+    text-decoration: underline;
 }
 .inscription-form div .icon{
     position: absolute;
