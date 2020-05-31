@@ -8,6 +8,35 @@ body {
 	padding: 0;
 	font-family: Righteous;
 }
+
+
+.login-form div{
+        position: relative;
+        width: 100%;
+        display: flex;
+}
+
+.login-form div .icon{
+    position: absolute;
+    left: 0;
+    margin-top: 7.5%;
+    margin-left: 13%;
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+}
+
+.login-form div .eye{
+    position: absolute;
+    right: 0;
+    margin-top: 7.5%;
+    margin-right: 13%;
+    width: 40px;
+    height: 40px;
+    opacity: 0.7;
+}
+
+
 .box {
 	display: flex;
 	background-color: white;
@@ -36,7 +65,7 @@ body {
 .login-form #a2,
 .login-form #a1{
     text-align: right;
-    width: 90%;
+    width: 80%;
     margin: auto;
     margin-top: 1%;
     text-decoration: none;
