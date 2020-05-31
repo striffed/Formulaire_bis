@@ -43,13 +43,13 @@ const processDataForm = data => {
 }
 
 const handleErrorMessage = () => {
-    document.querySelector('#messageok').style.display="none";
-    document.querySelector('#messageerror').style.display="block";
+    document.querySelector('#ok').style.display="none";
+    document.querySelector('#error').style.display="block";
 }
 
 const handleSuccessMessage = () => {
-    document.querySelector('#messageerror').style.display="none";
-    document.querySelector('#messageok').style.display="block";
+    document.querySelector('#error').style.display="none";
+    document.querySelector('#ok').style.display="block";
 
 }
 

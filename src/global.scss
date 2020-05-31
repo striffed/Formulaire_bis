@@ -132,8 +132,8 @@ input {
     padding-left: 15%;
 } 
 
-.login-form #messageok,
-.login-form #messageerror{
+.login-form #ok,
+.login-form #error{
     text-align: center;
     width: 100%;
     margin: auto;
@@ -143,7 +143,7 @@ input {
     display: none;   
 }
 
-.login-form #messageok{
+.login-form #ok{
     color: green;
 }
 
